@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+@media screen and (max-width:645px){
+    #mobile{
+       background-color: #5B2386;
+       z-index: 99;
+       width:100vw;
+       height:100vh;
+       position:absolute;
+       top:0;
+       bottom:0;
+       justify-content: center;
+       display: flex;
+       align-items: center;
+    }
+    span{
+        font-family: 'Noto Sans KR';
+        color:#FCEE21;
+        font-size: 32px;
+        position:absolute;
+        top:0;
+        bottom:0;
+        width:100vw;
+        height:100vh;
+    }
+}
+
+body{
+    width:100%;
+    background-color:#5B2386;
+    box-sizing: border-box;
+}
+
+.clock .clock-img img{
+    width:225px;
+    height:225px;
+}
+
+.clock .clock-img2 img{
+    width:564px;
+    height:112px;
+    position: absolute;
+    top:50px;
+    left:660px;
+}
+
+.button1 .click img{
+    width: 33.85px;
+    height:41.7px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.clock{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-top:79px;
+}
+
+.practice-sentence p{
+    color:#F5DF4D;
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 36px;
+    text-align: center;
+    margin-top:65px;
+}
+
+.main-sentence{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin-top:57px;
+}
+
+.main-sentence .main-sentence_text{
+    text-align:center;
+    width:373px;
+    height:85px;
+    margin-top:44px;
+    line-height: 30px;
+}
+
+.main-sentence p{
+    color:#FFFFFF;
+    font-family: 'GmarketSansMedium';
+    font-size: 18px;
+}
+
+.main-sentence p span{
+    font-family: 'GmarketSansBold';
+    color:#FFFFFF;
+    font-size: 24px;
+}
+
+.main-sentence .main-sentence_img img{
+    margin-top: 38px;
+    position:absolute;
+    right:700px;
+    bottom:30px;
+}
+
+.be-sentence{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+.be-sentence .be-sentence_text{
+    width:514px;
+    height:57px;
+    margin-bottom:25px;
+    display:flex;
+}
+
+.be-sentence .be-sentence_text p{
+    font-family: 'GmarketSansMedium';
+    font-size:24px;
+    color:#FFFFFF;
+    margin-top:20px;
+}
+
+.be-sentence .be-sentence_text input{
+    width:228px;
+    height:57px;
+    border-radius: 7px;
+    margin:0 10px;
+    padding-top:5px;
+}
+
+.be-sentence .be-sentence_text2 p{
+    font-family: 'GmarketSansMedium';
+    font-size:24px;
+    color:#FFFFFF;
+    margin-top:20px;
+}
+
+.be-sentence .be-sentence_text2 input{
+    width:228px;
+    height:57px;
+    border-radius: 7px;
+    margin:0 10px;
+    padding-top:7px;
+}
+
+.be-sentence .be-sentence_text2{
+    display:flex;
+    width:770px;
+    height:67px;
+}
+
+.button1{
+    position:relative;
+    display: inline-block;
+    left:35%;
+    margin-top:114px;
+}
+
+.button1 button{
+    width:565px;
+    height:66px;
+    border-radius: 56px;
+    background-color: #FCEE21;
+    position: absolute;
+}
+
+.button1 button>p{
+    color:#5B2386;
+    font-size:24px;
+    font-weight:700;
+    text-align: center;
+}
+
+.button1 .click img{
+    width:50.85px;
+    height:58.7px;
+}
+
+.button1 .click{
+    display: inline-block;
+    top:15px;
+    position: absolute;
+    right:-575px
+}
+.haveto-sentence{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:163px;
+    line-height: 72px;
+}
+.haveto-sentence .have-text p{
+    color:#FFFFFF;
+    font-size:24px;
+    font-weight:400;
+    font-family: 'GmarketSansMedium';
+}
+.haveto-sentence .have-text p span{
+    font-family: 'GmarketSansMedium';
+    font-size:72px;
+    font-weight:700;
+}
+
+.haveto-sentence .have-text2 p{
+    color:#FFFFFF;
+    font-size:24px;
+    font-weight:400;
+    font-family: 'GmarketSansMedium';
+}
+
+.haveto-sentence .have-text2 p span{
+    font-family: 'GmarketSansMedium';
+    font-size:72px;
+    font-weight:700;
+}
+
+.button2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:72px;
+}
+
+.button2 .button2-text{
+    width:356px;
+    height:66px;
+    background-color:#FCEE21;
+    border-radius: 56px;
+    margin-right: 8px;
+}
+
+.button2 .button2-text p{
+   color:#5B2386;
+   font-family: 'GmarketSansMedium';
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.button2 .button2-text2{
+    width:191px;
+    height:66px;
+    border-radius: 56px;
+    background-color: #FFFFFF;
+}
+
+.button2 .button2-text2 p{
+color:#5B2386;
+font-family: 'GmarketSansMedium';
+font-size:24px;
+font-weight:700;
+}
+
+.logo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:54px;
+}
+
+.logo .logo-content {
+    margin-top:20px;
+    margin-bottom:38px;
+}
+
+.logo .logo-text{
+    padding-bottom:69px;
+}
+.logo .logo-text p{
+    font-family: 'Noto Sans KR'; 
+    color:#FFFFFF;
+    font-size:12px;
+    text-align: center;
+    line-height: 17.38px;
+}
+
+input::placeholder{
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    text-align: center;
+    color:#BABCBE;
+}
+
