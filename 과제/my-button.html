@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-button</title>
+    <style>
+        .wrap {
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .button {
+            width: 300px;
+            height: 70px;
+            background-color: #aee52e;
+            border-radius: 15px;
+            margin: 300px;
+            outline: none;
+            font-size: 28px;
+            color: white;
+            position: relative;
+            border: none;
+            overflow: hidden;
+            box-shadow: 0px 8px 35px #aee52e;
+            cursor: pointer;
+        }
+
+        .button::before {
+            content: "Hi!";
+            display: inline-block;
+            position: absolute;
+            width: 300px;
+            height: 70px;
+            background-color: white;
+            color: #aee52e;
+            transform: translateX(300px);
+            transition: all .5s;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            border-radius: 15px;
+            line-height: 65px;
+            font-weight: 700;
+            outline: none;
+            border: none;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover::before {
+            transform: translateX(0);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="wrap">
+    <button class="button">Click Me!</button>
+</body>
+
+</html>
