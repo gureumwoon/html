@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>wenive모달창</title>
+</head>
+
+<body>
+    <section id="app">
+        <h1 class="blind">wenive 로그인창</h1>
+        <header class="title">
+            <p>로그인 또는 회원가입</p>
+            <a href="#none" class="close-btn">
+                <img src="./img/Vector 2.png" class="close-btn__img">
+                <img src="./img/Vector 3.png" class="close-btn__img2">
+            </a>
+        </header>
+        <section>
+            <h2 class="blind">아이디 비밀번호 입력창</h2>
+            <p class="weniv-desc">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+            <form class="login-input">
+                <label for="아이디"></label>
+                <input type="text" placeholder="아이디" id="아이디" class="login-id">
+                <label for="비밀번호"></label>
+                <input type="text" placeholder="비밀번호" id="비밀번호" class="login-pw">
+            </form>
+            <p class="login-check">로그인 상태 유지</p>
+            <button type="button" class="login-btn">로그인</button>
+            <div class="user">
+                <p class="user-account"><a href="#none">회원가입</a></p>
+                <p class="user-find"><a>아이디/비밀번호 찾기</a></p>
+            </div>
+        </section>
+        <p>또는</p>
+        <form class="social-login">
+            <button class="social-login__google">구글 계정으로 로그인</button>
+            <button class="social-login__facebook">페이스북 계정으로 로그인</button>
+            <button class="social-login__naver">네이버 계정으로 로그인</button>
+            <button class="social-login__kakao">카카오톡 계정으로 로그인</button>
+        </form>
+    </section>
+</body>
+
+</html>

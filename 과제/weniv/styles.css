@@ -1,0 +1,70 @@
+@font-face {
+    font-family: SpoqaHanSansNeo-Bold;
+    src: url("./SpoqaHanSansNeo_TTF_original/SpoqaHanSansNeo-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: SpoqaHanSansNeo-Light;
+    src: url("../SpoqaHanSansNeo_TTF_original/SpoqaHanSansNeo-Light.ttf");
+}
+@font-face {
+    font-family: SpoqaHanSansNeo-Medium;
+    src: url("../SpoqaHanSansNeo_TTF_original/SpoqaHanSansNeo-Medium.ttf");
+}
+@font-face {
+    font-family: SpoqaHanSansNeo-Regular;
+    src: url("../SpoqaHanSansNeo_TTF_original/SpoqaHanSansNeo-Regular.ttf");
+}
+@font-face {
+    font-family: SpoqaHanSansNeo-Thin;
+    src: url("./SpoqaHanSansNeo_TTF_original/SpoqaHanSansNeo-Thin.ttf");
+}
+
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#app{
+    width:520px;
+    height:712px;
+    border:1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: 150px auto 0;
+}
+.title{
+    border-bottom: 1px solid #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 18px;
+}
+
+.title p {
+    font-family: SpoqaHanSansNeo-Bold;
+    color:#000000;
+    font-size:16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.title .close-btn{
+position: relative;
+width:16px;
+height:16px;
+left:148px;
+}
+.title .close-btn .close-btn__img{
+position: absolute;
+}
+
+section .weniv-desc{
+/* width:369px; */
+height:24px;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+}
