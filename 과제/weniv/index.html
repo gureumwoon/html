@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>wenive모달창</title>
 </head>
 
@@ -29,15 +29,18 @@
                 <label for="비밀번호"></label>
                 <input type="text" placeholder="비밀번호" id="비밀번호" class="login-pw">
             </form>
-            <p class="login-check">로그인 상태 유지</p>
+            <div class="check">
+                <input type="checkbox" id="login-check">
+                <label for="login-check">로그인 상태 유지</label>
+            </div>
             <button type="button" class="login-btn">로그인</button>
             <div class="user">
-                <p class="user-account"><a href="#none">회원가입</a></p>
-                <p class="user-find"><a>아이디/비밀번호 찾기</a></p>
+                <a href="#none" class="user-account">회원가입</a>
+                <a href="#none" class="user-find">아이디/비밀번호 찾기</a>
             </div>
         </section>
-        <p>또는</p>
         <form class="social-login">
+            <p>또는</p>
             <button class="social-login__google">구글 계정으로 로그인</button>
             <button class="social-login__facebook">페이스북 계정으로 로그인</button>
             <button class="social-login__naver">네이버 계정으로 로그인</button>
