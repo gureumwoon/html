@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body{
+    width:100%;
+    background-color:#5B2386;
+    box-sizing: border-box;
+}
+.blind{
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.title{
+    display: inline-block;
+    position: relative;
+    margin-top:194px;
+    width:564px;
+    height:112px;
+    margin-left:678px;
+}
+
+.title::before{
+    display: block;
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:225px;
+    height:225px;
+    margin:-112px 0 0 -112px;
+    background-image: url("../img/clock.png");
+    background-position: center;
+}
+
+.tit-img{
+    width:564px;
+    height:112px;
+    position: relative;
+    z-index: 10; 
+}
+.practice-img{
+    max-width:486px;
+    margin:125px auto 84px;
+}
+
+.main-sentence{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin-top:78px;
+}
+
+.main-sentence .main-sentence_text{
+    text-align:center;
+    width:373px;
+    height:85px;
+    margin-top:44px;
+    line-height: 30px;
+}
+
+.main-sentence p{
+    position: relative;
+    max-width:475px;
+    line-height: 30px;
+    font-size: 18px;
+    color:#FFFFFF;
+    font-family: 'GmarketSansMedium';
+}
+
+.main-sentence p strong{
+    font-family: 'GmarketSansBold';
+    color:#FFFFFF;
+    font-size: 24px;
+}
+
+.main-sentence .main-sentence_img img{
+    margin-top: 38px;
+    position:absolute;
+    right:700px;
+    bottom:30px;
+}
+
+.be-sentence{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+.be-sentence .be-sentence__wannabe{
+    width:514px;
+    height:57px;
+    margin-bottom:25px;
+    font-family: 'GmarketSansMedium';
+    font-size:24px;
+    color:#ffff;
+    margin-top:20px;
+}
+
+.be-sentence .be-sentence__time{
+    width:765px;
+    height:57px; 
+    font-family: 'GmarketSansMedium';
+    font-size:24px;
+    color:#ffff;
+}
+
+.be-sentence .be-sentence__wannabe input,.be-sentence .be-sentence__time input{
+    width:224px;
+    height:53px;
+    margin:0 10px;
+    border:none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 24px;
+    vertical-align: 4px;
+}
+
+.be-sentence .be-sentence_text2{
+    display:flex;
+    width:770px;
+    height:67px;
+} 
+
+.be-sentence button{
+    padding:21px 49px;
+    margin-top:115px;
+    margin-bottom:127px;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: GmarketSansBold;
+    color:#5B2386;
+    background-color: #FCEE21;
+    border-radius: 56px;
+    cursor:pointer;
+    border:none;
+}
+
+.haveto-sentence{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 72px;
+}
+
+.haveto-sentence .have-text p{
+    color:#FFFFFF;
+    font-size:24px;
+    font-weight:400;
+    font-family: 'GmarketSansMedium';
+}
+
+.haveto-sentence .have-text p strong{
+    font-family: 'GmarketSansMedium';
+    font-size:72px;
+    font-weight:700;
+}
+
+.haveto-sentence .have-text2 p{
+    color:#FFFFFF;
+    font-size:24px;
+    font-weight:400;
+    font-family: 'GmarketSansMedium';
+}
+
+.haveto-sentence .have-text2 p strong{
+    font-family: 'GmarketSansMedium';
+    font-size:72px;
+    font-weight:700;
+}
+
+.haveto-sentence .btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:127px;
+}
+
+.haveto-sentence .btn-go{
+    width:356px;
+    height:66px;
+    background-color:#FCEE21;
+    border-radius: 56px;
+    margin-right: 8px;
+    color:#5B2386;
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.haveto-sentence .btn-share{
+    width:191px;
+    height:66px;
+    border-radius: 56px;
+    background-color: #FFFFFF;
+    color:#5B2386;
+    font-family: 'GmarketSansMedium';
+    font-size:24px;
+    font-weight:700;
+}
+
+.logo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:130px;
+}
+
+.logo .logo-content {
+    margin-top:20px;
+    margin-bottom:38px;
+}
+
+.logo .logo-text{
+    padding-bottom:69px;
+}
+
+.logo .logo-text p{
+    font-family: 'Noto Sans KR'; 
+    color:#FFFFFF;
+    font-size:12px;
+    text-align: center;
+    line-height: 17.38px;
+}
+
+input::placeholder{
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    text-align: center;
+    color:#BABCBE;
+} 
+
+

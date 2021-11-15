@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body{
+    background-color: #5b2386;
+}
+
+.titleimg{
+    position:absolute;
+    top:273px;
+    left:678px;
+    width: 564px;
+    height: 112px;
+    z-index: 1;
+}
+
+.clockimg{
+    position:absolute;
+    top:219px;
+    left:828px;
+    width:225px;
+    height:225px;
+    z-index: 2;
+}
+
+.famous{
+    position: absolute;
+    width:486px;
+    height:40px;
+    top:510px;
+    left:717px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39.6px;
+    text-align: center;
+    color:#f5df4d;
+    font-family: 'OTEnjoystoriesBA';
+}
+
+.textword{
+    position: absolute;
+    width: 375px;
+    height: 85px;
+    top: 628px;
+    left: 774px;
+    font-family: 'GmarketSansMedium';
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    color:white;
+}
+
+.textword strong{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.textword p{
+    margin-bottom: 10px;
+}
+
+.front{
+    position: absolute;
+    top:641px;
+    left:714px;
+    width:46px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: center;
+    color: #fcee21;
+    font-family: 'GmarketSansBold';
+    line-height: 96px;
+}
+.end{
+    position: absolute;
+    top:641px;
+    left:1161px;
+    width:46px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: center;
+    color: #fcee21;
+    font-family: 'GmarketSansBold';
+    line-height: 96px;
+}
+
+.boxline1{
+    position:absolute;
+    width:520px;
+    height:57px;
+    top:815px;
+    left:703px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: white;
+}
+.boxline2{
+    position:absolute;
+    width:790px;
+    height:57px;
+    top:899px;
+    left:578px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: white;
+}
+.textbox{
+    width:228px;
+    height:57px;
+    border-radius: 7px;
+    align-items: center;
+    color: #babcbe;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 24px;
+}
+
+.btn{
+    position: absolute;
+    top: 1070px;
+    left: 678px;
+    width: 565px;
+    height: 66px;
+    border-radius: 56px;
+    background-color: #fcee21;
+    border-color: #fcee21;
+    color: #5b2386;
+    font-size: 24px;
+    font-family: 'GmarketSansBold';
+    line-height: 24px;
+    cursor: pointer;
+}
+.clickimg{
+    position:absolute;
+    top:1085px;
+    left:1250px;
+}
+
+.textword2{
+    position: absolute;
+    width: 670px;
+    height: 72px;
+    top: 1284px;
+    left: 629px;
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    color:white;
+}
+
+.textword2 strong{
+    font-weight: 700;
+    font-size: 72px;
+    padding: 5px;
+    line-height: 100px;
+}
+
+.textword2 p{
+    margin-bottom: 10px;
+}
+
+.weniv{
+    position: absolute;
+    top: 1768px;
+    left: 897px;
+}
+
+.warning{
+    position: absolute;
+    top: 1813px;
+    left: 778px;
+    width: 385px;
+    height: 34px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    line-height: 17px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+}
