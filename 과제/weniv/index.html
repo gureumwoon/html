@@ -11,23 +11,25 @@
 </head>
 
 <body>
-    <section id="app">
-        <h1 class="blind">wenive 로그인창</h1>
+    <section class="modal-login">
+        <h1 class="txt-hide">wenive 로그인창</h1>
         <header class="title">
             <p>로그인 또는 회원가입</p>
             <a href="#none" class="close-btn">
-                <img src="./img/Vector 2.png" class="close-btn__img">
-                <img src="./img/Vector 3.png" class="close-btn__img2">
+                <img src="./img/Vector2.png" class="close-btn__img">
+                <img src="./img/Vector3.png" class="close-btn__img2">
             </a>
         </header>
         <section>
-            <h2 class="blind">아이디 비밀번호 입력창</h2>
+            <h2 class="txt-hide">아이디 비밀번호 입력창</h2>
             <p class="weniv-desc">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
             <form class="login-input">
-                <label for="아이디"></label>
-                <input type="text" placeholder="아이디" id="아이디" class="login-id">
-                <label for="비밀번호"></label>
-                <input type="text" placeholder="비밀번호" id="비밀번호" class="login-pw">
+                <fieldset>
+                    <label for="아이디"></label>
+                    <input type="text" placeholder="아이디" id="아이디" class="login-id" required>
+                    <label for="비밀번호"></label>
+                    <input type="text" placeholder="비밀번호" id="비밀번호" class="login-pw" required>
+                </fieldset>
             </form>
             <div class="check">
                 <input type="checkbox" id="login-check">
@@ -40,11 +42,13 @@
             </div>
         </section>
         <form class="social-login">
-            <p>또는</p>
-            <button class="social-login__google">구글 계정으로 로그인</button>
-            <button class="social-login__facebook">페이스북 계정으로 로그인</button>
-            <button class="social-login__naver">네이버 계정으로 로그인</button>
-            <button class="social-login__kakao">카카오톡 계정으로 로그인</button>
+            <fieldset>
+                <p>또는</p>
+                <button class="social-login__google">구글 계정으로 로그인</button>
+                <button class="social-login__facebook">페이스북 계정으로 로그인</button>
+                <button class="social-login__naver">네이버 계정으로 로그인</button>
+                <button class="social-login__kakao">카카오톡 계정으로 로그인</button>
+            </fieldset>
         </form>
     </section>
 </body>

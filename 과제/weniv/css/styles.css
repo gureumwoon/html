@@ -19,7 +19,11 @@
     src: url("../SpoqaHanSansNeo_TTF_subset/SpoqaHanSansNeo-Thin.ttf") format("truetype");
 }
 
-.blind{
+body{
+    font-family: "SpoqaHanSansNeo-Regular", sans-serif;
+}
+
+.txt-hide{
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -28,13 +32,34 @@
     overflow: hidden;
 }
 
-#app{
-    width:520px;
+.modal-login{
+    width:100%;
+    max-width:520px;
     height:712px;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    background-color: #fff;
     border:1px solid #C4C4C4;
     border-radius: 10px;
     margin: auto 0;
+    position: fixed;
+    z-index: 20;
 }
+
+body::after {
+    display:block;
+    content:"";
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #000000;
+    opacity: .7;
+    z-index: 10;
+}
+
 .title{
     border-bottom: 1px solid #C4C4C4;
     display: flex;
@@ -45,26 +70,26 @@
 
 .title p {
     width:144px;
-    font-family: SpoqaHanSansNeo-Medium;
     color:#000000;
     font-size:16px;
     line-height: 20px;
     font-weight: 500;
     text-align: center;
 }
+
 .title .close-btn{
     position: relative;
     width:16px;
     height:16px;
     left:148px;
 }
+
 .title .close-btn .close-btn__img{
     position: absolute;
 }
 
 section .weniv-desc{
     width:369px;
-    font-family: SpoqaHanSansNeo-Medium;
     height:24px;
     font-size: 20px;
     font-weight: 500;
@@ -72,9 +97,11 @@ section .weniv-desc{
     margin: 26px 127px  24px 24px; 
     white-space: nowrap;
 } 
+
 .login-input{
     margin-left: 24px;
 }
+
 .login-input .login-id, .login-pw{
     width:472px;
     height:50px;
@@ -85,32 +112,32 @@ section .weniv-desc{
 }
 
 .login-input .login-id, .login-pw::placeholder{
-    font-family: SpoqaHanSansNeo-Regular;
     color:#767676;
     font-size:16px;
     line-height: 20px;
     font-weight: 400;
     margin-bottom:10px;
 }
+
 .check{
     margin-top:16px;
     margin-left:28px;
     margin-bottom:20px;
 }
+
 input[type="checkbox"]+label{
     width:111px;
     height:20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    font-family: SpoqaHanSansNeo-Regular;
     color: #767676;
 }
 
 input[type="checkbox"]+label::before{
     display:inline-block;
     content:"";
-    background: url("../img/Ellipse 1.png") no-repeat 0 0px / contain;
+    background: url("../img/empty-check-box .png");
     width:22px;
     height:22px;
     vertical-align:text-top;
@@ -118,11 +145,7 @@ input[type="checkbox"]+label::before{
 }
 
 input[type="checkbox"]:checked+label::before {
-    display:inline-block;
-    content:"";
-    width:22px;
-    height:22px;
-    background: url("../img/Vector (1).png") no-repeat 0 4px / contain;
+    background: url("../img/check-box .png");
 }
 
 input[type="checkbox"]{
@@ -134,7 +157,6 @@ input[type="checkbox"]{
     height:50px;
     background-color: #2F80ED;
     border-radius:5px ;
-    font-family: SpoqaHanSansNeo-Regular;
     color:#FFFFFF;
     font-size: 18px;
     line-height: 22px;
@@ -152,7 +174,6 @@ input[type="checkbox"]{
 
 .user-account, .user-find{
     color:#767676;
-    font-family: SpoqaHanSansNeo-Regular;
     font-size: 14px;
     font-weight:400px;
     line-height: 17px;
@@ -163,16 +184,15 @@ input[type="checkbox"]{
     display: inline-block;
     content:"|";
     color: #767676;
-    font-family: SpoqaHanSansNeo-Regular;
     width:4px;
     height:18px;
     border-radius:18px;
     margin-left:12px;
     margin-right:2px;
 }
+
 .social-login p{
     height:18px;
-    font-family: SpoqaHanSansNeo-Regular;
     color: #767676;
     line-height: 18px;
     font-weight:400;
@@ -180,6 +200,7 @@ input[type="checkbox"]{
     margin-bottom: 20px;
     margin-right:24px;
 }
+
 .social-login p::before{
     display: inline-block;
     content:"";
@@ -197,16 +218,17 @@ input[type="checkbox"]{
     background: #C4C4C4;
     margin-left:13px;
 }
+
 .social-login{
     margin-left:24px;
 }
+
 .social-login__google, .social-login__facebook, .social-login__naver, .social-login__kakao{
     width: 472px;
     height:50px;
     border:1px solid #767676;
     background-color: #FFFFFF;
     border-radius: 5px;
-    font-family: SpoqaHanSansNeo-Regular;
     color: #767676;
     font-size: 16px;
     line-height: 20px;
@@ -226,6 +248,7 @@ input[type="checkbox"]{
     left:12px;
     top: 11px;
 }
+
 .social-login__facebook::before{
     display:inline-block;
     content:"";
@@ -236,6 +259,7 @@ input[type="checkbox"]{
     left:12px;
     top: 11px;
 }
+
 .social-login__naver::before{
     display:inline-block;
     content:"";
@@ -246,6 +270,7 @@ input[type="checkbox"]{
     left:12px;
     top: 11px;
 }
+
 .social-login__kakao::before{
     display:inline-block;
     content:"";
