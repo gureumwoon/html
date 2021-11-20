@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cola machine</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1 class="main-tit ir">코카콜라</h1>
+        <section>
+            <h2>자판기</h2>
+            <ul class="item-list">
+                <li>
+                    <button class="item-btn">
+                        <img src="./src/img/Original_Cola.png" alt="" data-item="Original_Cola" data-count=""
+                            data-image="" data-price="" class="item-img">
+                        <p class="item-name">Original_Cola</p>
+                        <strong class="item-price">1000원</strong>
+                    </button>
+                </li>
+            </ul>
+            <div class="change">
+                <div class="return-change">
+                    잔액:
+                    <strong class="return-change__price">1,000원</strong>
+                </div>
+                <button type="button" class="return-btn">거스름돈 반환</button>
+            </div>
+            <div class="deposit">
+                <input type="text" placeholder="입금액 입력" class="deposit-inp">
+                <button type="button" class="deposit-btn">입금</button>
+            </div>
+            <div class="get-item">
+                <ul class="get-item__staged">
+                    <li>
+                        <img src="./src/img/Original_Cola.png" alt="" class="item-img">
+                        <strong>Original_Cola</strong>
+                        <strong>1</strong>
+                    </li>
+                </ul>
+                <button type="button" class="get-item__btn">획득</button>
+            </div>
+        </section>
+        <section class="my-info">
+            <h2 class="ir">내가 획득한 음료</h2>
+            <div class="cont-mymoney">
+                <div class="my-money">
+                    소지금:
+                    <strong class="my-money__amount">
+                        25,000원
+                    </strong>
+                </div>
+                <div class="cont-myitems">
+                    <strong class="tit-myitem">획득한 음료</strong>
+                    <ul class="myitems-list">
+                        <li>
+                            <img src="./src/img/Original_Cola.png" alt="" class="item-img">
+                            <strong>Original_Cola</strong>
+                            <strong>2</strong>
+                        </li>
+                    </ul>
+                    <strong class="amount">총금액:9,000원</strong>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
