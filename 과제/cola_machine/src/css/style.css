@@ -1,0 +1,258 @@
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: 
+	#EAE8FE;
+}
+
+#app {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 0 28px;
+	padding-top: 247px;
+}
+
+.main-tit {
+	width:100%;
+	max-width:386px;
+	height:158px;
+	background: no-repeat center / 100% 100% url("../img/Logo_img.png");
+	top:0;
+}
+
+#app .cola-machine{
+	width:360px;
+	height:545px;
+	background-color:
+	#FFFFFF ;
+	padding: 31px 27px 28px;
+	box-sizing: border-box;
+}
+.cola-machine .item-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.cola-machine .item-list li {
+	width:94px;
+	height:130px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.cola-machine .item-list li:active {
+	box-shadow: 0 0 3px 4px #6327FE ;
+}
+
+.cola-machine .item-list li:nth-child(2)::before {
+	display: block;
+	content: "";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index: 1;
+	border-radius: 10px;
+	background: no-repeat center / 58px 45px url("../img/Sold-out.png") rgba(0,0,0,0.8);
+}
+
+.cola-machine .item-list li:nth-child(3)~li {
+	margin-top: 12px;
+}
+
+.cola-machine .item-list .item-img {
+	width:36px;
+	height:65px;
+	margin: 0 auto;
+}
+
+
+.cola-machine .item-list .item-btn {
+    width:100%;
+    height:100%;
+	display: block;
+}
+
+.item-btn .item-name {
+	display: block;
+	font-size: 9px;
+	margin: 7px 0;
+}
+
+.item-btn .item-price {
+	display: inline-block;
+	border-radius:50px;
+	background-color: #6327FE;
+	color:#FFFFFF;
+	font-size: 12px;
+	padding:5px 15px;
+}
+
+.change .return-change {
+	width:200px;
+	border-radius: 5px;
+	background-color:#EAE8FE;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	font-weight: 500 ;
+}
+
+.change .return-change__price {
+	float: right;
+}
+
+.change .return-btn {
+	width: 94px;
+	font-size: 13px;
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+.cola-machine .change,
+.cola-machine .deposit,
+.cola-machine .get-item {
+     display: flex;
+	 justify-content: space-between;
+	 margin-top:12px;
+}
+
+.deposit .deposit-inp {
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid #BDBDBD;
+	line-height: 19px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+}
+
+.deposit .deposit-btn {
+	width:94px;
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	line-height: 19px;
+	font-size: 13px;
+	padding:6px 35px;
+	box-sizing: border-box;
+}
+
+.get-item .get-item__staged {
+	height:106px;
+	border-radius: 5px;
+	padding:12px;
+	box-sizing: border-box;
+	border: 1px solid #BDBDBD;
+	overflow-y: scroll;
+	background-color:#EAE8FE ;
+}
+
+.get-item__staged li {
+	padding:8px;
+	border-radius: 5px;	
+	background-color: #FFFFFF;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.get-item__staged .item-img {
+	width:18px;
+	float: left;
+}
+
+.get-item__staged .item-name{
+    font-size: 9px;
+	line-height: 33px;
+	margin-left: 10px;
+	margin-right: 18px;
+	float: left;
+}
+
+.get-item__staged .item-count {
+	display: flex;
+	width:30px;
+	height:30px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border: 1px solid #BDBDBD;
+	font-size: 14px;
+	float: right;
+}
+
+.get-item .get-item__btn {
+	width:94px;
+	background-color: #6327FE;
+	color:#FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* my-info */
+
+.my-info .cont-mymoney {
+	width: 360px;
+	height: 50px;
+	padding: 9px 27px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+}
+
+.cont-mymoney .my-money {
+	width: 306px;
+	height:32px;
+	border-radius: 5px;
+	background-color: #EAE8FE;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.my-money .my-money__amount {
+	float: right;
+}
+
+.my-info .cont-myitems {
+	width: 360px;
+	height: 474px;
+	background-color: #FFFFFF;
+	margin-top: 20px;
+	padding: 25px 27px;
+	box-sizing: border-box;
+}
+
+.cont-myitems .tit-myitem {
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 13px;
+}
+
+.cont-myitems .get-item__staged {
+	width: 306px;
+	height: 364px;
+	overflow-y: scroll;
+	border-radius: 5px;
+	background-color: #EAE8FE;
+	padding:12px;
+	box-sizing: border-box;
+}
+
+.cont-myitems .get-item__staged li {
+	margin-bottom:6px;
+}
+
+.cont-myitems .amount {
+	display: block;
+	float: right;
+	font-size: 12px;
+	margin-top: 6px;
+}
+

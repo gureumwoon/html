@@ -6,21 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cola machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-    <section>
+    <section id="app">
         <h1 class="main-tit ir">코카콜라</h1>
-        <section>
-            <h2>자판기</h2>
+        <section class="cola-machine">
+            <h2 class="ir">자판기</h2>
             <ul class="item-list">
                 <li>
-                    <button class="item-btn">
-                        <img src="./src/img/Original_Cola.png" alt="" data-item="Original_Cola" data-count=""
-                            data-image="" data-price="" class="item-img">
-                        <p class="item-name">Original_Cola</p>
+                    <button class="item-btn" data-item="Original_Cola" data-count="" data-image="" data-price="">
+                        <img src="./src/img/Original_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Original_Cola</strong>
+                        <strong class="item-price">1000원</strong>
+                    </button>
+                </li>
+                <li>
+                    <button class="item-btn" data-item="Violet_Cola" data-count="" data-image="" data-price="">
+                        <img src="./src/img/Violet_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Violet_Cola</strong>
+                        <strong class="item-price">1000원</strong>
+                    </button>
+                </li>
+                <li>
+                    <button class="item-btn" data-item="Yellow_Cola" data-count="" data-image="" data-price="">
+                        <img src="./src/img/Yellow_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Yellow_Cola</strong>
+                        <strong class="item-price">1000원</strong>
+                    </button>
+                </li>
+                <li>
+                    <button class="item-btn" data-item="Cool_Cola" data-count="" data-image="" data-price="">
+                        <img src="./src/img/Cool_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Cool_Cola</strong>
+                        <strong class="item-price">1000원</strong>
+                    </button>
+                </li>
+                <li>
+                    <button class="item-btn" data-item="Green_Cola" data-count="" data-image="" data-price="">
+                        <img src="./src/img/Green_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Green_Cola</strong>
+                        <strong class="item-price">1000원</strong>
+                    </button>
+                </li>
+                <li>
+                    <button class="item-btn" data-item="Orange_Cola" data-count="" data-image="" data-price="">
+                        <img src="./src/img/Orange_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Orange_Cola</strong>
                         <strong class="item-price">1000원</strong>
                     </button>
                 </li>
@@ -40,8 +77,8 @@
                 <ul class="get-item__staged">
                     <li>
                         <img src="./src/img/Original_Cola.png" alt="" class="item-img">
-                        <strong>Original_Cola</strong>
-                        <strong>1</strong>
+                        <strong class="item-name">Original_Cola</strong>
+                        <strong class="item-count">1</strong>
                     </li>
                 </ul>
                 <button type="button" class="get-item__btn">획득</button>
@@ -56,17 +93,32 @@
                         25,000원
                     </strong>
                 </div>
-                <div class="cont-myitems">
-                    <strong class="tit-myitem">획득한 음료</strong>
-                    <ul class="myitems-list">
-                        <li>
-                            <img src="./src/img/Original_Cola.png" alt="" class="item-img">
-                            <strong>Original_Cola</strong>
-                            <strong>2</strong>
-                        </li>
-                    </ul>
-                    <strong class="amount">총금액:9,000원</strong>
-                </div>
+            </div>
+            <div class="cont-myitems">
+                <strong class="tit-myitem">획득한 음료</strong>
+                <ul class="get-item__staged">
+                    <li>
+                        <img src="./src/img/Original_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Original_Cola</strong>
+                        <strong class="item-count">1</strong>
+                    </li>
+                    <li>
+                        <img src="./src/img/Green_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Green_Cola</strong>
+                        <strong class="item-count">2</strong>
+                    </li>
+                    <li>
+                        <img src="./src/img/Orange_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Orange_Cola</strong>
+                        <strong class="item-count">1</strong>
+                    </li>
+                    <li>
+                        <img src="./src/img/Violet_Cola.png" alt="" class="item-img">
+                        <strong class="item-name">Violet_Cola</strong>
+                        <strong class="item-count">5</strong>
+                    </li>
+                </ul>
+                <strong class="amount">총금액: 9,000원</strong>
             </div>
         </section>
     </section>
