@@ -19,6 +19,10 @@
     src: url("../SpoqaHanSansNeo_TTF_subset/SpoqaHanSansNeo-Thin.ttf") format("truetype");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: "SpoqaHanSansNeo-Regular", sans-serif;
 }
@@ -42,7 +46,7 @@ body{
     background-color: #fff;
     border:1px solid #C4C4C4;
     border-radius: 10px;
-    margin: auto 0;
+    margin: 0 auto;
     position: fixed;
     z-index: 20;
 }
@@ -62,30 +66,38 @@ body::after {
 
 .title{
     border-bottom: 1px solid #C4C4C4;
-    display: flex;
+    position: relative;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 18px;
+    padding: 20px 0 18px; */
 }
 
 .title p {
-    width:144px;
+    /* width:144px; */
+    height: 58px;
     color:#000000;
+    padding: 20px 0 18px; 
+    text-align: center;
     font-size:16px;
     line-height: 20px;
     font-weight: 500;
-    text-align: center;
 }
 
 .title .close-btn{
-    position: relative;
+    position: absolute;
     width:16px;
     height:16px;
-    left:148px;
+    top: 22px;
+    right: 24px;
 }
 
-.title .close-btn .close-btn__img{
+/* .title .close-btn .close-btn__img{
     position: absolute;
+} */
+
+.login {
+    margin: 26px 24px 0;
 }
 
 section .weniv-desc{
@@ -94,13 +106,14 @@ section .weniv-desc{
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;  
-    margin: 26px 127px  24px 24px; 
+    /* margin: 26px 127px  24px 24px;  */
     white-space: nowrap;
+    margin-bottom:  24px;
 } 
 
-.login-input{
+/* .login-input{
     margin-left: 24px;
-}
+} */
 
 .login-input .login-id, .login-pw{
     width:472px;
@@ -108,21 +121,20 @@ section .weniv-desc{
     border-radius: 5px;
     border:1px solid #C4C4C4;
     padding:15px 0 15px 16px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    margin-bottom: 10px;
 }
 
-.login-input .login-id, .login-pw::placeholder{
+.login-input .login-id::placeholder, .login-pw::placeholder{
     color:#767676;
     font-size:16px;
     line-height: 20px;
     font-weight: 400;
-    margin-bottom:10px;
+    /* margin-bottom:10px; */
 }
 
 .check{
-    margin-top:16px;
-    margin-left:28px;
-    margin-bottom:20px;
+   margin: 6px 0 20px;
 }
 
 input[type="checkbox"]+label{
@@ -162,22 +174,25 @@ input[type="checkbox"]{
     line-height: 22px;
     font-weight:700px;
     border:none;
-    margin: 0 24px 20px;
+    margin-bottom: 20px;
 }
 
 .user{
-   width:205px;
+   /* width:205px; */
    height:18px;
-   margin-left:158px;
+   /* margin-left:158px; */
+   text-align: center;
    margin-bottom: 30px;
 }
 
 .user-account, .user-find{
+    position: relative;
+    left: -1px;
     color:#767676;
     font-size: 14px;
     font-weight:400px;
     line-height: 17px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .user .user-account::after{
@@ -198,29 +213,31 @@ input[type="checkbox"]{
     font-weight:400;
     font-size: 14px;
     margin-bottom: 20px;
-    margin-right:24px;
+    /* margin-right:24px; */
 }
 
-.social-login p::before{
+.social-login p::before,
+.social-login p::after {
     display: inline-block;
     content:"";
     width:210px;
     height:1px;
     background: #C4C4C4;
-    margin-right:13px;
+    position: relative;
+    top: -4px;
+    /* margin-right:13px; */
 }
 
-.social-login p::after{
-    display: inline-block;
-    content:"";
-    width:210px;
-    height:1px;
-    background: #C4C4C4;
-    margin-left:13px;
+.social-login p::before {
+    margin-right: 11px;
+}
+
+.social-login p::after {
+    margin-left: 11px;
 }
 
 .social-login{
-    margin-left:24px;
+    margin:0 24px;
 }
 
 .social-login__google, .social-login__facebook, .social-login__naver, .social-login__kakao{
@@ -243,7 +260,9 @@ input[type="checkbox"]{
     content:"";
     width: 28px;
     height:28px;
-    background-image: url("../img/Google__G__Logo 1.png");
+    background-image: url("../img/css_sprites_retina.png");
+    background-size: 96px 96px;
+    background-position:  -58px -58px;
     position: absolute;
     left:12px;
     top: 11px;
@@ -254,7 +273,9 @@ input[type="checkbox"]{
     content:"";
     width: 28px;
     height:28px;
-    background-image: url("../img/facebook.png");
+    background-image: url("../img/css_sprites_retina.png");
+    background-size: 96px 96px;
+    background-position:  -10px -58px;
     position: absolute;
     left:12px;
     top: 11px;
@@ -265,7 +286,9 @@ input[type="checkbox"]{
     content:"";
     width: 28px;
     height:28px;
-    background-image: url("../img/naver-logo.png");
+    background-image: url("../img/css_sprites_retina.png");
+    background-size: 96px 96px;
+    background-position: -58px -10px;
     position: absolute;
     left:12px;
     top: 11px;
@@ -276,7 +299,7 @@ input[type="checkbox"]{
     content:"";
     width: 28px;
     height:28px;
-    background-image: url("../img/message-circle.png");
+    background: url("../img/css_sprites_retina.png") -10px -10px / 96px 96px;
     position: absolute;
     left:12px;
     top: 11px;
