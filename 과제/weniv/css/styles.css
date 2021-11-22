@@ -39,14 +39,14 @@ body{
 .modal-login{
     width:100%;
     max-width:520px;
-    height:712px;
+    /* height:712px; */
     top:50%;
     left:50%;
     transform:translate(-50% , -50%);
     background-color: #fff;
     border:1px solid #C4C4C4;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 0 auto 16px;
     position: fixed;
     z-index: 20;
 }
@@ -86,6 +86,11 @@ body::after {
 
 .title .close-btn{
     position: absolute;
+    background: url("../img/close.png");
+    padding:0;
+    background-color: #fff;
+    border:none;
+    cursor: pointer;
     width:16px;
     height:16px;
     top: 22px;
@@ -106,14 +111,9 @@ section .weniv-desc{
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;  
-    /* margin: 26px 127px  24px 24px;  */
     white-space: nowrap;
     margin-bottom:  24px;
 } 
-
-/* .login-input{
-    margin-left: 24px;
-} */
 
 .login-input .login-id, .login-pw{
     width:472px;
@@ -121,7 +121,6 @@ section .weniv-desc{
     border-radius: 5px;
     border:1px solid #C4C4C4;
     padding:15px 0 15px 16px;
-    /* box-sizing: border-box; */
     margin-bottom: 10px;
 }
 
@@ -130,7 +129,6 @@ section .weniv-desc{
     font-size:16px;
     line-height: 20px;
     font-weight: 400;
-    /* margin-bottom:10px; */
 }
 
 .check{
@@ -175,12 +173,12 @@ input[type="checkbox"]{
     font-weight:700px;
     border:none;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .user{
    /* width:205px; */
    height:18px;
-   /* margin-left:158px; */
    text-align: center;
    margin-bottom: 30px;
 }
@@ -192,7 +190,6 @@ input[type="checkbox"]{
     font-size: 14px;
     font-weight:400px;
     line-height: 17px;
-    /* box-sizing: border-box; */
 }
 
 .user .user-account::after{
@@ -206,6 +203,10 @@ input[type="checkbox"]{
     margin-right:2px;
 }
 
+.social-login{
+    margin:0 24px 26px;
+}
+
 .social-login p{
     height:18px;
     color: #767676;
@@ -213,7 +214,6 @@ input[type="checkbox"]{
     font-weight:400;
     font-size: 14px;
     margin-bottom: 20px;
-    /* margin-right:24px; */
 }
 
 .social-login p::before,
@@ -225,7 +225,6 @@ input[type="checkbox"]{
     background: #C4C4C4;
     position: relative;
     top: -4px;
-    /* margin-right:13px; */
 }
 
 .social-login p::before {
@@ -236,23 +235,23 @@ input[type="checkbox"]{
     margin-left: 11px;
 }
 
-.social-login{
-    margin:0 24px;
-}
-
-.social-login__google, .social-login__facebook, .social-login__naver, .social-login__kakao{
-    width: 472px;
-    height:50px;
-    border:1px solid #767676;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    color: #767676;
+.social-login li a{
+    position: relative;
+    margin-bottom: 10px;
+    display: block;
+    padding:15px 0 16px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    color: #767676;
+    text-decoration: none;
     text-align: center;
-    font-weight:500;
-    margin-bottom: 10px;
-    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.social-login__google {
+    border: 1px solid #767676;
 }
 
 .social-login__google::before{
@@ -268,6 +267,10 @@ input[type="checkbox"]{
     top: 11px;
 }
 
+.social-login__facebook {
+    border: 1px solid #2F80ED;
+}
+
 .social-login__facebook::before{
     display:inline-block;
     content:"";
@@ -281,6 +284,10 @@ input[type="checkbox"]{
     top: 11px;
 }
 
+.social-login__naver {
+    border: 1px solid #00BF18;
+}
+
 .social-login__naver::before{
     display:inline-block;
     content:"";
@@ -292,6 +299,10 @@ input[type="checkbox"]{
     position: absolute;
     left:12px;
     top: 11px;
+}
+
+.social-login__kakao {
+    border: 1px solid #F2C94C;
 }
 
 .social-login__kakao::before{
