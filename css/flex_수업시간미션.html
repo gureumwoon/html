@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <title>holi grail layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            color: navy;
+        }
+
+        .sr-only {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .menu-bar {
+            width: 100%;
+            height: 10vh;
+            background-color: cornflowerblue;
+        }
+
+        .content {
+            width: 80%;
+            height: 30vh;
+            background-color: cornsilk;
+        }
+
+        .side-content {
+            width: 20%;
+            height: 30vh;
+            background-color: hotpink;
+        }
+
+        .footer {
+            width: 100%;
+            height: 10vh;
+            background-color: cadetblue;
+        }
+
+        @media screen and (max-width:800px) {
+            .content {
+                width: 100%;
+            }
+
+            .side-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu-bar">
+        <h1 class="sr-only">제목1</h1>
+        <nav>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+        </nav>
+    </header>
+    <section class=content>
+        <h2 class="sr-only">제목2</h2>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odit iusto
+            explicabo maiores adipisci aut culpa incidunt distinctio provident eos nobis, quae optio doloribus deserunt
+            sed voluptatibus! Illum, nemo reiciendis?</article>
+    </section>
+    <aside class="side-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae cum non libero doloribus repudiandae
+        atque sequi beatae saepe aperiam.
+    </aside>
+    <footer class="footer">
+        footer
+    </footer>
+</body>
+
+</html>
